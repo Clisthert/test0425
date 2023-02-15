@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Prod 1",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        "price": "1.05",
+        "quantity": "5",
+        "date": "2023/02/1"
+    },
+    {
+        "name": "Prod 2",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry, Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        "price": "20.40",
+        "quantity": "5",
+        "date": "2023/02/1"
+    },
+    {
+        "name": "Prod 3",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        "price": "10.00",
+        "quantity": "2",
+        "date": "2023/02/1"
+    },
+    {
+        "name": "Prod 4",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+        "price": "30.00",
+        "quantity": "1",
+        "date": "2023/02/1"
+    },
+    {
+        "name": "Prod 5",
+        "description": "The majority have suffered alteration in some form, by injected humour",
+        "price": "3.35",
+        "quantity": "10",
+        "date": "2023/02/1"
+    },
+    {
+        "name": "Prod 6",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        "price": "1.05",
+        "quantity": "5",
+        "date": "2023/02/1"
+    },
+    {
+        "name": "Prod 7",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        "price": "20.40",
+        "quantity": "8",
+        "date": "2023/02/1"
+    },
+    {
+        "name": "Prod 8",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        "price": "10.00",
+        "quantity": "2",
+        "date": "2023/02/1"
+    },
+    {
+        "name": "Prod 9",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+        "price": "30.00",
+        "quantity": "140",
+        "date": "2023/02/1"
+    },
+    {
+        "name": "Prod 10",
+        "description": "The majority have suffered alteration in some form, by injected humour",
+        "price": "3.35",
+        "quantity": "100",
+        "date": "2023/02/1"
+    }
+]
