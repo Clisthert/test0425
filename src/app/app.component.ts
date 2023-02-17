@@ -42,11 +42,15 @@ export class AppComponent {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.rowData = this.http.get(
-      'https://www.bateriasjr.com.br/js/olympic-winners.json'
-    );
-    //this.rowData = this.http.get('https://www.ag-grid.com/example-assets/olympic-winners.json');
-    //this.rowData = this.http.get('https://www.ag-grid.com/example-assets/row-data.json');
+    this.rowData = this.http.get('http://localhost:5000/prod');
+
+    this.getCandy();
+  }
+
+  getCandy() {
+    this.http.get('http://localhost:5000/prod').subscribe((data) => {
+      console.log('teste>>>>>: ', data);
+    });
   }
 
   // getSelectedRows() {
@@ -55,4 +59,23 @@ export class AppComponent {
   //   const selectedDataStringPresentation = selectedData.map( node => node.make + ' ' + node.model).join(', ');
   //   alert(`Selected nodes: ${selectedDataStringPresentation}`);
   // }
+
+  global: string = '';
+
+  onFileSelected(event: any) {
+    const file = event.target.files[0];
+    this.global = file;
+    console.log('test: ', this.global);
+    return file;
+  }
+
+  envio(e: any) {
+    const send = {
+      mensagem: 'texteare',
+      file: this.global,
+      event: e,
+    };
+    console.log('envio: ', send);
+    return send;
+  }
 }

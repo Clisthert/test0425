@@ -1,14 +1,23 @@
 <!-- <button (click)="getSelectedRows()">Get Selected Rows</button> -->
 
-
+<h1>Angular CORS App 😁</h1>
 <h2>Dynamic AgGrid Configuration</h2>
-<ag-grid-angular 
-    #agGrid
-    style="width: 100%; height: 50vw" 
-    class="ag-theme-balham"
-    [autoGroupColumnDef]="autoGroupColumnDef"
-    [rowData]="rowData | async"
-    [columnDefs]="columnDefs"
-    rowSelection="multiple"
+
+<input
+  type="file"
+  class="file-input"
+  (change)="onFileSelected($event)"
+  #fileUpload
+/>
+<button (click)="envio($event)">enviar</button>
+
+<ag-grid-angular
+  #agGrid
+  style="width: 100%; height: 50vw"
+  class="ag-theme-balham"
+  [autoGroupColumnDef]="autoGroupColumnDef"
+  [rowData]="rowData | async"
+  [columnDefs]="columnDefs"
+  rowSelection="multiple"
 >
 </ag-grid-angular>
